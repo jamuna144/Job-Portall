@@ -3,7 +3,6 @@ import portal from "../assets/portal.webp";
 const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-md">
-
       <div className="flex items-center gap-3">
         <img
           src={portal}
@@ -17,11 +16,22 @@ const Navbar = () => {
       </div>
 
       <ul className="flex gap-6 text-sm md:text-base">
-        <li className="hover:text-cyan-400 transition cursor-pointer">Home</li>
-        <li className="hover:text-cyan-400 transition cursor-pointer">About</li>
-        <li className="hover:text-cyan-400 transition cursor-pointer">Contact</li>
+        <li>
+          <a href="#home" className="hover:text-cyan-400 transition">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" className="hover:text-cyan-400 transition">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="hover:text-cyan-400 transition">
+            Contact
+          </a>
+        </li>
       </ul>
-
     </nav>
   );
 };
